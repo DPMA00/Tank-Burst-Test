@@ -4,14 +4,14 @@ This repository contains software for a remote burst test for a student rocket t
 
 | Hardware | Description| 
 |:---:|:--:|
-|![alt text](image.png)| ESP32 |
-|![alt text](image-2.png) | 5V DC Pressure Transducer (0-300PSI)|
-|![alt text](image-3.png)| $3 \times 10k\Omega$ resistors for a 2:3 voltage divider circuit|
+|![ESP32](img/esp32.png)| ESP32 |
+|![p_sensor](img/pressure_sensor.png) | 5V DC Pressure Transducer (0-300PSI)|
+|![resistor](img/resistor.png)| $3 \times 10k\Omega$ resistors for a 2:3 voltage divider circuit|
 
 
 ## Circuit
 
-![alt text](image-5.png)
+![circuit](img/circuit.png)
 
 ## Software
 
@@ -22,5 +22,5 @@ Because the ADC pins on the ESP32 exhibit nonlinear behvaior, especially near 0V
 $$V_{ADC} = \frac{ADC_{raw}}{4095} \times 3.3V$$
 $$V_{sensor} = V_{ADC} \times \frac{3}{2}$$
 
-![alt text](image-6.png)
+![nonlinear_adc](img/nonlinear_adc.png)
 
